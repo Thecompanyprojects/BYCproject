@@ -1,0 +1,6 @@
+framework module Pods_BycProject {
+  umbrella header "Pods-BycProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
