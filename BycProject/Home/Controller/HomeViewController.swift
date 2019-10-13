@@ -10,16 +10,15 @@ import UIKit
 
 
 
-class HomeViewController: BaseViewController,UITextFieldDelegate {
+class HomeViewController: SegmentBaseVC {
 
+    let menu = menuView.init()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-
+        self.view.backgroundColor = UIColor.white
         changeUI()
-       
     }
     
     @objc func changeUI()
@@ -60,8 +59,11 @@ class HomeViewController: BaseViewController,UITextFieldDelegate {
             make.right.equalTo(search.snp_right).offset(-13)
         }
         
+        self.menu.frame = CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: 180)
+        self.view.addSubview(self.menu)
+        
     }
-    
+    //MARK:点击事件
     @objc func leftClick1()
     {
         
@@ -71,11 +73,59 @@ class HomeViewController: BaseViewController,UITextFieldDelegate {
 
         print("tap the tapSearch")
 
-    }}
-
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool
-    {
-        textField.resignFirstResponder()
-        return true
     }
+    
+    //MARK: - 子控件视图
+    let topBarV = UIView()
+    let contentContainerV = UIView()
+       
+    // 子类重写这个方法
+    override func selectIndex(index: Int){
+             
+    }
+    override func addSegmentBar() {
+        
+        let titles = ["找案例", "找商品","找公司","找攻略","效果图"]
+        let vc1 = BaseViewController()
+        let vc2 = BaseViewController()
+        let vc3 = BaseViewController()
+        let vc4 = BaseViewController()
+        let vc5 = BaseViewController()
+        let vcs = [vc1, vc2,vc3,vc4,vc5]
+        
+        // 添加标题和选择控制器
+        segmentBarVC.setupTitlesAndChildVCs(titles: titles, childVCs: vcs)
+        segmentBarVC.segmentBar.updateConfig {(config) in
+            config.textNormalColor(UIColor.init(hex: "666666"))
+                .textSelectColor(UIColor.init(hex: "444444"))
+                .textNormalFont(UIFont.systemFont(ofSize: 16))
+                .textSelectFont(UIFont.boldSystemFont(ofSize: 19))
+                .barMaxWidth(UIScreen.main.bounds.width)
+                .barHeight(44)
+                .bottomLineHeight(0)
+                .bottomLineColor(UIColor.blue)
+                .isItemEqualWidth(true)
+                .update()
+            
+        }
+        
+        addContainerV()
+        
+        self.topBarV.addSubview(segmentBarVC.segmentBar)
+        self.addChild(segmentBarVC)
+        segmentBarVC.view.frame = contentContainerV.bounds
+        self.contentContainerV.addSubview(segmentBarVC.view)
+
+    }
+    
+    private func addContainerV(){
+      topBarV.frame = CGRect(x: 0, y: 170, width: UIScreen.main.bounds.width, height: 44)
+      view.addSubview(topBarV)
+      contentContainerV.frame = CGRect(x: 0, y: 44+170, width: UIScreen.main.bounds.width, height: view.bounds.height - 44 - kNavigationBarHeight-170)
+      view.addSubview(contentContainerV)
+    }
+    
+}
+
+
 

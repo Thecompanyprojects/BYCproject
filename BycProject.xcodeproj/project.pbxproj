@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0B205B3629FF0501B96C8A09 /* Pods_BycProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6377C35C09FF3606ACCB2691 /* Pods_BycProjectTests.framework */; };
+		5348E5DE235322D700072E6A /* SegmentBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348E5DA235322D700072E6A /* SegmentBar.swift */; };
+		5348E5DF235322D700072E6A /* SegmentBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348E5DB235322D700072E6A /* SegmentBarConfig.swift */; };
+		5348E5E0235322D700072E6A /* SegmentBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348E5DC235322D700072E6A /* SegmentBarVC.swift */; };
+		5348E5E1235322D700072E6A /* SegmentBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348E5DD235322D700072E6A /* SegmentBaseVC.swift */; };
 		536E60BD234F16A200FC1F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536E60BC234F16A200FC1F85 /* AppDelegate.swift */; };
 		536E60C1234F16A200FC1F85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536E60C0234F16A200FC1F85 /* ViewController.swift */; };
 		536E60C4234F16A200FC1F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536E60C2234F16A200FC1F85 /* Main.storyboard */; };
@@ -52,6 +56,10 @@
 		084E6B0B7B3E56F5383B3017 /* Pods_BycProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BycProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F340265DE79C35537A1BD0B /* Pods-BycProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BycProject.release.xcconfig"; path = "Target Support Files/Pods-BycProject/Pods-BycProject.release.xcconfig"; sourceTree = "<group>"; };
 		334E996F0DB7135B2D9FEA13 /* Pods-BycProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BycProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-BycProjectUITests/Pods-BycProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5348E5DA235322D700072E6A /* SegmentBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentBar.swift; sourceTree = "<group>"; };
+		5348E5DB235322D700072E6A /* SegmentBarConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentBarConfig.swift; sourceTree = "<group>"; };
+		5348E5DC235322D700072E6A /* SegmentBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentBarVC.swift; sourceTree = "<group>"; };
+		5348E5DD235322D700072E6A /* SegmentBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentBaseVC.swift; sourceTree = "<group>"; };
 		536E60B9234F16A200FC1F85 /* 帮一程.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "帮一程.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		536E60BC234F16A200FC1F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		536E60C0234F16A200FC1F85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +130,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5348E5D9235322D700072E6A /* SegmentBarVC */ = {
+			isa = PBXGroup;
+			children = (
+				5348E5DA235322D700072E6A /* SegmentBar.swift */,
+				5348E5DB235322D700072E6A /* SegmentBarConfig.swift */,
+				5348E5DC235322D700072E6A /* SegmentBarVC.swift */,
+				5348E5DD235322D700072E6A /* SegmentBaseVC.swift */,
+			);
+			path = SegmentBarVC;
+			sourceTree = "<group>";
+		};
 		536E60B0234F16A200FC1F85 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +202,7 @@
 		536E60EC2351B33A00FC1F85 /* Utlis */ = {
 			isa = PBXGroup;
 			children = (
+				5348E5D9235322D700072E6A /* SegmentBarVC */,
 				536E60F22351B60D00FC1F85 /* BycHeader.h */,
 				536E60F32351B64600FC1F85 /* Const.swift */,
 				536E60F52351B73400FC1F85 /* BycFile.swift */,
@@ -511,8 +531,10 @@
 			files = (
 				536E61002351C13500FC1F85 /* ChangeViewController.swift in Sources */,
 				536E60C1234F16A200FC1F85 /* ViewController.swift in Sources */,
+				5348E5DF235322D700072E6A /* SegmentBarConfig.swift in Sources */,
 				536E610E2352D9CB00FC1F85 /* BycButton.swift in Sources */,
 				536E60F12351B5A500FC1F85 /* BaseViewController.swift in Sources */,
+				5348E5E1235322D700072E6A /* SegmentBaseVC.swift in Sources */,
 				536E60F62351B73400FC1F85 /* BycFile.swift in Sources */,
 				536E60FC2351C11800FC1F85 /* FindViewController.swift in Sources */,
 				536E60BD234F16A200FC1F85 /* AppDelegate.swift in Sources */,
@@ -520,7 +542,9 @@
 				536E60F42351B64600FC1F85 /* Const.swift in Sources */,
 				536E61042351C19E00FC1F85 /* SLNavigationController.swift in Sources */,
 				536E610C2351DCFD00FC1F85 /* menuView.swift in Sources */,
+				5348E5DE235322D700072E6A /* SegmentBar.swift in Sources */,
 				536E61062351C1CC00FC1F85 /* SLTabBarController.swift in Sources */,
+				5348E5E0235322D700072E6A /* SegmentBarVC.swift in Sources */,
 				536E61022351C14E00FC1F85 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

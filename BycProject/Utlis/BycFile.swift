@@ -14,10 +14,18 @@ let SCREEN_WIDTH = UIScreen.main.bounds.size.width
 // 屏幕的高
 let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
 
+//屏幕宽度比例
+let width_scale = UIScreen.main.bounds.size.width/375
+//屏幕高度比例
+let height_scale = UIScreen.main.bounds.size.width/640
+
+
 // RGBA的颜色设置
 func kRGBA (r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
     return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
 }
+
+let MainColor = UIColor.init(hex: "cf4e39")
 
 let iPhoneX = SCREEN_HEIGHT == 812 ? true : false
  

@@ -44,6 +44,7 @@ class SLTabBarController: UITabBarController {
             childController.tabBarItem.selectedImage = UIImage.init(named: "icon_wo")
         }
         childController.title = title
+        self.tabBar.tintColor = MainColor
         let navVc = SLNavigationController(rootViewController: childController)
         addChild(navVc)
     }
