@@ -86,11 +86,11 @@ class HomeViewController: SegmentBaseVC {
     override func addSegmentBar() {
         
         let titles = ["找案例", "找商品","找公司","找攻略","效果图"]
-        let vc1 = BaseViewController()
-        let vc2 = BaseViewController()
-        let vc3 = BaseViewController()
-        let vc4 = BaseViewController()
-        let vc5 = BaseViewController()
+        let vc1 = HomecaseVC()
+        let vc2 = HomecommodityVC()
+        let vc3 = HomecompanyVC()
+        let vc4 = HomestrategyVC()
+        let vc5 = HomeeffectVC()
         let vcs = [vc1, vc2,vc3,vc4,vc5]
         
         // 添加标题和选择控制器

@@ -12,6 +12,14 @@
 		5348E5DF235322D700072E6A /* SegmentBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348E5DB235322D700072E6A /* SegmentBarConfig.swift */; };
 		5348E5E0235322D700072E6A /* SegmentBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348E5DC235322D700072E6A /* SegmentBarVC.swift */; };
 		5348E5E1235322D700072E6A /* SegmentBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348E5DD235322D700072E6A /* SegmentBaseVC.swift */; };
+		5348E5E3235325A100072E6A /* HomecaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348E5E2235325A100072E6A /* HomecaseVC.swift */; };
+		5348E5E523532A0800072E6A /* HomecommodityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348E5E423532A0800072E6A /* HomecommodityVC.swift */; };
+		5348E5E723532A3500072E6A /* HomecompanyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348E5E623532A3500072E6A /* HomecompanyVC.swift */; };
+		5348E5E923532A6800072E6A /* HomestrategyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348E5E823532A6800072E6A /* HomestrategyVC.swift */; };
+		5348E5EB23532A9100072E6A /* HomeeffectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348E5EA23532A9100072E6A /* HomeeffectVC.swift */; };
+		5348E5ED235338CF00072E6A /* homecaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348E5EC235338CF00072E6A /* homecaseCell.swift */; };
+		5348E5EF23533A2800072E6A /* homecaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348E5EE23533A2800072E6A /* homecaseModel.swift */; };
+		5348E5F123533A3500072E6A /* homecaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348E5F023533A3500072E6A /* homecaseViewModel.swift */; };
 		536E60BD234F16A200FC1F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536E60BC234F16A200FC1F85 /* AppDelegate.swift */; };
 		536E60C1234F16A200FC1F85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536E60C0234F16A200FC1F85 /* ViewController.swift */; };
 		536E60C4234F16A200FC1F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536E60C2234F16A200FC1F85 /* Main.storyboard */; };
@@ -60,6 +68,14 @@
 		5348E5DB235322D700072E6A /* SegmentBarConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentBarConfig.swift; sourceTree = "<group>"; };
 		5348E5DC235322D700072E6A /* SegmentBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentBarVC.swift; sourceTree = "<group>"; };
 		5348E5DD235322D700072E6A /* SegmentBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentBaseVC.swift; sourceTree = "<group>"; };
+		5348E5E2235325A100072E6A /* HomecaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomecaseVC.swift; sourceTree = "<group>"; };
+		5348E5E423532A0800072E6A /* HomecommodityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomecommodityVC.swift; sourceTree = "<group>"; };
+		5348E5E623532A3500072E6A /* HomecompanyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomecompanyVC.swift; sourceTree = "<group>"; };
+		5348E5E823532A6800072E6A /* HomestrategyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomestrategyVC.swift; sourceTree = "<group>"; };
+		5348E5EA23532A9100072E6A /* HomeeffectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeeffectVC.swift; sourceTree = "<group>"; };
+		5348E5EC235338CF00072E6A /* homecaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homecaseCell.swift; sourceTree = "<group>"; };
+		5348E5EE23533A2800072E6A /* homecaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homecaseModel.swift; sourceTree = "<group>"; };
+		5348E5F023533A3500072E6A /* homecaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homecaseViewModel.swift; sourceTree = "<group>"; };
 		536E60B9234F16A200FC1F85 /* 帮一程.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "帮一程.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		536E60BC234F16A200FC1F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		536E60C0234F16A200FC1F85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +284,7 @@
 		536E61072351DCCB00FC1F85 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5348E5EE23533A2800072E6A /* homecaseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				536E610B2351DCFD00FC1F85 /* menuView.swift */,
+				5348E5EC235338CF00072E6A /* homecaseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -283,6 +301,7 @@
 		536E61092351DCCE00FC1F85 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5348E5F023533A3500072E6A /* homecaseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -291,6 +310,11 @@
 			isa = PBXGroup;
 			children = (
 				536E60F82351C0E500FC1F85 /* HomeViewController.swift */,
+				5348E5E2235325A100072E6A /* HomecaseVC.swift */,
+				5348E5E423532A0800072E6A /* HomecommodityVC.swift */,
+				5348E5E623532A3500072E6A /* HomecompanyVC.swift */,
+				5348E5E823532A6800072E6A /* HomestrategyVC.swift */,
+				5348E5EA23532A9100072E6A /* HomeeffectVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -533,19 +557,27 @@
 				536E60C1234F16A200FC1F85 /* ViewController.swift in Sources */,
 				5348E5DF235322D700072E6A /* SegmentBarConfig.swift in Sources */,
 				536E610E2352D9CB00FC1F85 /* BycButton.swift in Sources */,
+				5348E5EF23533A2800072E6A /* homecaseModel.swift in Sources */,
 				536E60F12351B5A500FC1F85 /* BaseViewController.swift in Sources */,
 				5348E5E1235322D700072E6A /* SegmentBaseVC.swift in Sources */,
 				536E60F62351B73400FC1F85 /* BycFile.swift in Sources */,
 				536E60FC2351C11800FC1F85 /* FindViewController.swift in Sources */,
 				536E60BD234F16A200FC1F85 /* AppDelegate.swift in Sources */,
+				5348E5E523532A0800072E6A /* HomecommodityVC.swift in Sources */,
 				536E60F92351C0E500FC1F85 /* HomeViewController.swift in Sources */,
+				5348E5E923532A6800072E6A /* HomestrategyVC.swift in Sources */,
+				5348E5ED235338CF00072E6A /* homecaseCell.swift in Sources */,
+				5348E5E723532A3500072E6A /* HomecompanyVC.swift in Sources */,
 				536E60F42351B64600FC1F85 /* Const.swift in Sources */,
+				5348E5EB23532A9100072E6A /* HomeeffectVC.swift in Sources */,
 				536E61042351C19E00FC1F85 /* SLNavigationController.swift in Sources */,
 				536E610C2351DCFD00FC1F85 /* menuView.swift in Sources */,
 				5348E5DE235322D700072E6A /* SegmentBar.swift in Sources */,
 				536E61062351C1CC00FC1F85 /* SLTabBarController.swift in Sources */,
 				5348E5E0235322D700072E6A /* SegmentBarVC.swift in Sources */,
 				536E61022351C14E00FC1F85 /* MineViewController.swift in Sources */,
+				5348E5E3235325A100072E6A /* HomecaseVC.swift in Sources */,
+				5348E5F123533A3500072E6A /* homecaseViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
